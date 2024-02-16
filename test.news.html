@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test News</title>
+</head>
+<body>
+    <h1>Check your console for results</h1>
+    <script>
+        const apiKey = '395ef1c11ff143af9eddc9970b74e8c9';
+        const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+
+        async function fetchNews(){
+            try{
+                let response = await fetch(url)
+                let data = await response.json(); 
+                console.log(data);
+            }catch(error){
+                console.error(error);
+            }
+        }
+
+        fetchNews()
+    </script>
+</body>
+</html>
