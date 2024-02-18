@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="NewsAppStyles.css">
+    <title>Test News</title>
 </head>
+
 <body>
-    <h1>Top Headlines</h1>
-    <div id="news"></div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light m-0 p-0">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" id="general">General</a></li>
+                        <li class="nav-item"><a class="nav-link" id="business">Business</a></li>
+                        <li class="nav-item"><a class="nav-link" id="entertainment">Entertainment</a></li>
+                        <li class="nav-item"><a class="nav-link" id="health">Health</a></li>
+                        <li class="nav-item"><a class="nav-link" id="science">Science</a></li>
+                        <li class="nav-item"><a class="nav-link" id="sports">Sports</a></li>
+                        <li class="nav-item"><a class="nav-link" id="technology">Technology</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-left mt-3 mb-3 font-weight-bold">Top Stories</h1>
+            </div>
+            
+        </div>
+        <hr class="my-4">
+        <div class="row mt-3" id="article-tree">
+            <div class="col-4" id="sample-card">
+                <div class="card mb-3">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <h5><a class="card-title" href="#"></a></h5>
+                        <p class="card-text" id="card-description">Brief description of the article.</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts.js" type="module"></script>
 </body>
+
 </html>
